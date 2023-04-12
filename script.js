@@ -12,7 +12,7 @@ function verifica(){
 
     img.setAttribute('id', 'foto')
 
-    if(tn_ano.value.length == 0 || Number(tn_ano.value) >= 2023){
+    if(tn_ano.value.length == 0 || Number(tn_ano.value) >= ano_1){
         alert("[ERRO]Valores inválidos!!!\nTente novamente.")
     }else{
 
