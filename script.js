@@ -12,6 +12,10 @@ function verifica(){
 
     img.setAttribute('id', 'foto')
 
+    if(tn_ano.value.length == 0 || Number(tn_ano.value) >= 2023){
+        alert("[ERRO]Valores inválidos!!!\nTente novamente.")
+    }else{
+
     if(tn_sex[0].checked){
         sex = 'Homem'
 
@@ -55,5 +59,6 @@ function verifica(){
     tn_result.style.textAlign = 'center'
     tn_result.innerHTML = `Detectamos ${sex} de ${idade} ano(s)`
     tn_result.appendChild(img)
-    
+
+    }
 }
